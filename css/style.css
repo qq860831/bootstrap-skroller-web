@@ -9,8 +9,22 @@ body{
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight: bold;
 }
+nav .navbar{
+    transition: 0.5s;
+}
+.navbar .fixed-top .navbar-expand-md .navbar-top{
+    background: transparent;
+    /* 背景變透明 */
+}
+.navbar a {
+    color: white;
+    transition: 0.5s;
+  }
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top a:hover {
+    color: orange;
+  }
 .jumbotron{
-    background-image: url(http://mmbiz.qpic.cn/mmbiz/5feXIiajDItf8T2YZoxCuVrhFMrVibfeZ8KGD7No9nL7bCUtpviblEmIia4okbL7aHqTNdGd4zWmcO83WfxVNZvibbg/0?wx_fmt=jpeg);
+    background-image: url(https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-attachment: fixed;  /* 固定圖片不會滾動 */
     text-align: center;
@@ -80,7 +94,7 @@ h2{
     font-weight: bold;
 }
 section#section_future{
-    font-size: 24px;
+    font-size: 20px;
 }
 section#section_future img {
     width: 100%;
