@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    border:solid 1px #666;
+}
+body{
+    height: 2000px;
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-weight: bold;
+}
+header.jumbotron{
+    background-image: url(http://mmbiz.qpic.cn/mmbiz/5feXIiajDItf8T2YZoxCuVrhFMrVibfeZ8KGD7No9nL7bCUtpviblEmIia4okbL7aHqTNdGd4zWmcO83WfxVNZvibbg/0?wx_fmt=jpeg);
+    background-size: cover;
+    background-attachment: fixed;  /* 固定圖片不會滾動 */
+    text-align: center;
+    margin-bottom: 0px;
+}
+header .container{
+    color: white;
+    padding: 200px 0;
+}
+header hr{
+    max-width: 50px;
+    border: solid 2px orange;
+}
+header h4{
+    color: rgba(white,0.5);
+    /* 文字變成半透明 */
+    font-weight: normal;
+}
+#section_ask{
+    background-color: orange;
+}
+.col-sm-5 img{
+    height: 350px;
+}
+h2{
+    margin-top: 130px;
+    padding: 0 20px;
+}
