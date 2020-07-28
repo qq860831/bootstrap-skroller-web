@@ -4,7 +4,7 @@
     border:solid 1px #666;
 }
 body{
-    height: 2000px;
+    height: 3000px;
 }
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight: bold;
@@ -34,8 +34,20 @@ header h4{
 }
 .col-sm-5 img{
     height: 350px;
+    width: 350px;
+    margin-left: 80px;
+    mix-blend-mode: multiply;
+    /* 顏色效果疊加 */
 }
 h2{
     margin-top: 130px;
     padding: 0 20px;
+}
+#section_about img{
+    width: 100%;
+}
+.img_wrap img{
+    height: 220px;
+    overflow: hidden;
+    /* 多出去的部分給隱藏 */
 }
