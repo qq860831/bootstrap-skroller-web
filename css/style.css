@@ -51,3 +51,23 @@ h2{
     overflow: hidden;
     /* 多出去的部分給隱藏 */
 }
+#section_story{
+    background-color: #222;
+    color: white;
+    padding: 0;
+}
+#section_story .col-sm-5{
+    background-image: url(https://stutzfamily.com/mrstutz/Maps/USHistory/europe1938.gif);
+    background-size: 100% auto;
+    height: 400px;
+}
+#section_story .col-sm-7{
+    text-align: center;
+}
+.col-sm-7 i{
+    font-size: 30px;
+}
+.col-sm-12 .features{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
