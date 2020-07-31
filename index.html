@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skroller Web</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/layout.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<!-- skroller -->
+<!-- 1.記得先連好cdn，並在js裡輸入初始化原始碼 -->
+<!-- 使用時後面有的屬性，前面也一定要有 -->
+
+
+
 
 <body>
     <!-- bootstrap導覽列的結構 -->
@@ -30,7 +38,7 @@
 
     <header class="jumbotron">
         <div class="container">
-            <h1>印刷術，知識的複製與革命</h1>
+            <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)">印刷術，知識的複製與革命</h1>
             <hr>
             <h4>對人類文化知識的傳播起到了決定性的作用</h4>
         </div>
@@ -39,11 +47,11 @@
     <section id="section_ask">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5 img">
+                <div class="col-sm-5 img" data-0="transform: translateX(-200px)" data-500="transform: translateY(0px)">
                     <img src="https://outline-prod.imgix.net/20170220-eJSspjGehEfXEcsTmWLy?auto=format&q=60&w=1280&s=6f03dc48106c96d381e0d9244c2546a9"
                         alt="">
                 </div>
-                <div class="col-sm-7">
+                <div class="col-sm-7" data-300="opacity: 0" data-500="opacity: 1">
                     <h2>如果今天沒有印表機，一本書需要花多久產生呢?</h2>
                 </div>
             </div>
@@ -145,6 +153,13 @@
             </div>
         </div>
     </section>
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

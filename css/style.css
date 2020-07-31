@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 微軟正黑體;
-    border:solid 1px #666;
+    /* border:solid 1px #666; */
 }
 body{
     height: 3000px;
@@ -9,19 +9,35 @@ body{
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight: bold;
 }
-nav .navbar{
+nav.navbar {
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-}
-.navbar .fixed-top .navbar-expand-md .navbar-top{
-    background: transparent;
-    /* 背景變透明 */
-}
-.navbar a {
-    color: white;
+  }
+  
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top {
+    background-color: transparent;
+  }
+  nav.navbar.fixed-top.navbar-expand-md.navbar-top a {
+    color: black;
+    
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   nav.navbar.fixed-top.navbar-expand-md.navbar-top a:hover {
-    color: orange;
+    color: #ff6e3a;
+    text-decoration: none;
+  }
+  .navbar-nav{
+      margin-left: 500px;
+      font-size: 20px;
+      padding-top: 20px;
+  }
+  .nav-item{
+      padding: 0 10px;
+  }
+  .navbar-brand{
+      font-size: 24px;
+      margin-top: 5px;
   }
 .jumbotron{
     background-image: url(https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
